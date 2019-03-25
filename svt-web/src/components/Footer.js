@@ -4,10 +4,10 @@ import React from 'react'
 
 import type { Node } from 'react'
 
-const Footer = () : Node => (
+import './Footer.css'
+
+export default () : Node => (
   <footer className="Footer">
-    <span>FOOTER</span>
+    <span className="Footer-email">kihlberg.olof@gmail.com</span>
   </footer>
 )
-
-export default Footer

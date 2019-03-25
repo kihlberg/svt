@@ -1,12 +1,15 @@
 {
   "name": "svt-web",
+  "description": "React frontend for SVT coding test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "flow-bin": "^0.95.1",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "react-transition-group": "^2.7.1",
+    "react-wordcloud": "^1.0.5"
   },
   "scripts": {
     "start": "react-scripts start",

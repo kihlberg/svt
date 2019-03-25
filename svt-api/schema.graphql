@@ -1,0 +1,12 @@
+type Word {
+  text: String!
+  value: Int!
+}
+
+type Wordcloud {
+  words: [Word!]
+}
+
+type Query {
+  wordcloud(hashtag: String!): Wordcloud
+}

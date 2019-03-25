@@ -1,0 +1,11 @@
+.Footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 12px;
+}
+
+.Footer-email {
+  padding: 0 12px 0 0;
+}

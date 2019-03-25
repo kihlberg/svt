@@ -1,19 +1,23 @@
 // @flow
 
-import type { State, Action } from './types'
+import type { Action, State } from './types'
 
-export default (state : State, action : Action) : State => {
+export default (state: State, action: Action) : State => {
   switch (action.type) {
+    case 'SET_IS_FORM_VISIBLE':
+      return {
+        ...state,
+        isFormVisible: action.isFormVisible,
+      }
     case 'SET_HASHTAG':
       return {
         ...state,
         hashtag: action.hashtag,
-        words: []
       }
     case 'SET_WORDS':
       return {
         ...state,
-        words: action.words
+        words: action.words,
       }
     default:
       throw new Error(`Unknown action type ${action.type}`);

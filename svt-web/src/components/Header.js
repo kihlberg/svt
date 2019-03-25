@@ -4,10 +4,12 @@ import React from 'react'
 
 import type { Node } from 'react'
 
-const Header = () : Node => (
+import './Header.css'
+
+export default () : Node => (
   <header className="Header">
-    <span>HEADER</span>
+    <span className="Header-title">
+      Tag cloud by Olof Kihlberg
+    </span>
   </header>
 )
-
-export default Header

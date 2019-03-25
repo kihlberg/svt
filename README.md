@@ -1,17 +1,33 @@
 # svt
 
-TODO
+To run the app first start `svt-api` and then `svt-web`, see their respective READMEs.
 
-## Remaining
+The backend is a Graphql server, not 'cause it makes perfect sense for this use case but more 'cause I heard you're in the process of migrating to it and thought it'd be fun.
 
-- React.memo(), if not complex objects or functions are passed that doesn't change reference. Or use shouldComponentUpdate(prevProps, prevState) for class component, or pass comparison function to memo().
-- Docker compose
-- Aria stuff
-- React router
-- React helmet
+The frontend is a pretty straight forward create-react-app application, with Flow added.
 
 ## TODO
 
-- Server side rendering, for SEO and faster initial load time
+Some things I'd do if I had more time:
+
+### Backend
+- Dockerize
+- Add some E2E tests
+- Add more unit tests
+- Add Flow (or use TypeScript)
+- Set up Memcache/Redis to cache third party requests and other expensive computations
+- Use a proper logging framework
+- Use a reverse proxy (nginx) to handle rate limiting, SSL termination, etc
+- Monitoring and alerting
+- Build/test/deploy pipelines
+- Use a proper secrets management solution
+- Generate API docs
+
+### Frontend
+
+- Dockerize
+- Add some E2E tests
+- Add more unit tests
 - React Router for deep linking and browser back/forward actions support
-- Build pipelines to test, build, push docker images, etc etc
+- Test things on IE, a screen reader, etc
+- Server side rendering, for SEO and faster initial load time

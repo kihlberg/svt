@@ -31,3 +31,4 @@ Some things I'd do if I had more time:
 - React Router for deep linking and browser back/forward actions support
 - Test things on IE, a screen reader, etc
 - Server side rendering, for SEO and faster initial load time
+- Improve error handling and loading states

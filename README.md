@@ -6,6 +6,8 @@ The backend is a Graphql server, not 'cause it makes perfect sense for this use 
 
 The frontend is a pretty straight forward create-react-app application, with Flow added.
 
+![Wordcloud](https://i.ibb.co/x67wbsQ/Screen-Shot-2019-03-27-at-2-03-29-PM.png)
+
 ## TODO
 
 Some things I'd do if I had more time:

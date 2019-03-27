@@ -35,6 +35,6 @@ module.exports = fetchTweets => async ({ hashtag }) => {
   entries.sort((a, b) => b.popularity - a.popularity)
 
   return {
-    words: entries.slice(0, 50)
+    words: entries.slice(0, 100)
   }
 }

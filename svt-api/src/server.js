@@ -15,7 +15,7 @@ app.use('/graphql', cors(), expressGraphql({
   rootValue: {
     wordcloud: require('./handlers/wordcloud')(fetchTweets)
   },
-  graphiql: process.env.NODE_ENV !== 'production'
+  graphiql: process.env.NODE_ENV === 'development'
 }))
 
 app.listen(8080, () => {
